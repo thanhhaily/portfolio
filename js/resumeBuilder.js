@@ -2,7 +2,7 @@ var bio = {
 	"name" : "Thanh Hai Ly",
 	"role" : "Java Developer",
 	"contacts" : {
-		"email" : "lythanhhai89@gmail.com",
+		"email" : "hai.lt1015@gmail.com",
 		"mobile" : "0916710xxx",
 		"twitter" : "lythanhhai89",
 		"github" : "thanhhaily",
