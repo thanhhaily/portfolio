@@ -155,6 +155,12 @@ var projects = {
 			"dates" : 2015,
 			"description" : "Java application built using Java with JDBC, Swing, SQL SERVER 2008.",
 			"images" : ["images/javaapp.jpg"]
+		},
+		{
+			"title" : "Frontend Nanodegree Resume",
+			"dates" : 2015,
+			"description" : "A static website built on HTML, CSS, JavaScript, JQuery",
+			"images" : ["images/Resume.jpg"]
 		}
 	]
 }
