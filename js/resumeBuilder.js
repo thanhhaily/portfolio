@@ -160,7 +160,7 @@ var projects = {
 			"title" : "Frontend Nanodegree Resume",
 			"dates" : 2015,
 			"description" : "A static website built on HTML, CSS, JavaScript, JQuery",
-			"images" : ["images/Resume.jpg"]
+			"images" : ["images/resume.jpg"]
 		}
 	]
 }
