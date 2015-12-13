@@ -146,7 +146,6 @@ var projects = {
 			"description" : "A static website for watching movie online. The website is created using HTML, CSS, JavaScript, Bootstrap, JQuery",
 			"images" : [
 				"images/project1-1.jpg",
-				"images/category-movie-page.jpg",
 				"images/watch-movie-page.jpg"
 			]
 		},
