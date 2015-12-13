@@ -217,9 +217,9 @@ span {
 
 /*additional style*/
 
-/*.project-entry img {
+.project-entry img {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}*/
+}
 
 .more-gray {
   background-color: #f2f4f7;
