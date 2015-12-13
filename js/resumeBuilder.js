@@ -29,6 +29,7 @@ bio.display = function() {
 	$("#header").prepend(formattedName);
 	$("#header").append(formattedBioPic);
 	$("#topContacts").append(formattedMobile + formattedEmail + formattedGithub + formattedTwitter + formattedLocation);
+	$("#footerContacts").append(formattedMobile + formattedEmail + formattedGithub + formattedTwitter + formattedLocation);
 	$("#header").append(formattedWelcomeMsg);
 
 	if(bio.skills.length !== 0) {
