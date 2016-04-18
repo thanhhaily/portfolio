@@ -164,7 +164,7 @@ var projects = {
 			"link" : "https://github.com/thanhhaily/JavaProjectEMPtransfermanagement",
 			"dates" : 2016,
 			"description" : "Java desktop application using JDBC, Swing, SQL Server 2014",
-			"images" : ["images/emptransfermanagement.jpg"]
+			"images" : ["images/emptransfermanagement.JPG"]
 		}
 	]
 }
