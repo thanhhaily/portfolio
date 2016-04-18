@@ -105,7 +105,8 @@ var education = {
 			"title" : "JavaScript Basics",
 			"school" : "Udacity",
 			"date" : 2015,
-			"url" : "https://www.udacity.com/course/ud804"
+			"url" : "https://www.udacity.com/course/ud804",
+			"link" : "https://www.udacity.com/course/ud804"
 		}
 	]
 };
@@ -128,10 +129,10 @@ education.display = function() {
 	$("#education").append(HTMLonlineClasses);
 	for(var i = 0; i < education.onlineCourses.length; i++) {
 		$("#education").append(HTMLschoolStart);
-		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("%link%", education.onlineCourses[i].link);
 		var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
 		var formattedOnlineDate = HTMLonlineDates.replace("%data%", education.onlineCourses[i].date);
-		var formattedOnlineUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+		var formattedOnlineUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("%link%", education.onlineCourses[i].link);
 
 		$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
 		$(".education-entry:last").append(formattedOnlineDate);
@@ -143,6 +144,7 @@ var projects = {
 	"project" : [
 		{
 			"title" : "iMovie Website Project",
+			"link" : "http://batch120.aptech-vietnam.net/Group1/Website/",
 			"dates" : 2015,
 			"description" : "A static website for watching movie online. The website is created using HTML, CSS, JavaScript, Bootstrap, JQuery",
 			"images" : [
@@ -151,16 +153,18 @@ var projects = {
 			]
 		},
 		{
-			"title" : "School Mangement Program",
-			"dates" : 2015,
-			"description" : "Java application built using Java with JDBC, Swing, SQL SERVER 2008.",
-			"images" : ["images/javaapp.jpg"]
-		},
-		{
 			"title" : "Frontend Nanodegree Resume",
+			"link" : "https://github.com/thanhhaily/portfolio",
 			"dates" : 2015,
 			"description" : "A static website built on HTML, CSS, JavaScript, JQuery",
 			"images" : ["images/resume.jpg"]
+		},
+		{
+			"title" : "Employee Transfer Management",
+			"link" : "https://github.com/thanhhaily/JavaProjectEMPtransfermanagement",
+			"dates" : 2016,
+			"description" : "Java desktop application using JDBC, Swing, SQL Server 2014",
+			"images" : ["images/emptransfermanagement.jpg"]
 		}
 	]
 }
@@ -168,7 +172,7 @@ var projects = {
 projects.display = function() {
 	for(var i = 0;  i < projects.project.length; i++) {
 		$("#projects").append(HTMLprojectStart);
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.project[i].title);
+		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.project[i].title).replace("%link%", projects.project[i].link);
 		var formattedProjectDate = HTMLprojectDates.replace("%data%", projects.project[i].dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.project[i].description);
 		$(".project-entry:last").append(formattedProjectTitle);
@@ -177,7 +181,7 @@ projects.display = function() {
 
 		if(projects.project[i].images.length > 0) {
 			projects.project[i].images.forEach(function(e) {
-				var formattedProjectImage = HTMLprojectImage.replace("%data%", e);
+				var formattedProjectImage = HTMLprojectImage.replace("%data%", e).replace("%link%", projects.project[i].link);
 				$(".project-entry:last").append(formattedProjectImage);
 			});
 		}
